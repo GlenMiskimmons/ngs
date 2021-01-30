@@ -1,6 +1,8 @@
 const http = require('http');
 
 const requestListener = (req, res) => {
+  // req, res are streams!
+  console.dir(res, { depth: 0 })
   res.end('Hello Node\n');
 };
 
